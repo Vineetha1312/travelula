@@ -1,5 +1,3 @@
-Certainly! Below is a formal `README.md` file for your Travelula project. You can copy and paste this into your project repository.
-
 ```markdown
 # Travelula
 
