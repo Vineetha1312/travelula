@@ -24,9 +24,10 @@ import NewsletterSection from "./components/NewsletterSection";
 import ResetScrollOnRouteChange from "./components/ResetScrollOnRouteChange";
 
 // Clerk Publishable Key
-const PUBLISHABLE_KEY = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
+const PUBLISHABLE_KEY = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY || "default_key_or_empty";
 if (!PUBLISHABLE_KEY) {
-  throw new Error("Missing Clerk Publishable Key. Check your .env file.");
+  console.error("Missing Clerk Publishable Key. Check your .env file.");
+  // Optionally, you can render a fallback UI or a warning message instead of throwing an error.
 }
 
 // Home Page Structure
